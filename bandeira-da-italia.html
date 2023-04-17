@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeira da Itália</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .canvas__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+        }
+
+        .canvas {
+            width: 600px;
+            height: 400px;
+            border: 1px solid #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="canvas__container">
+        <canvas class="canvas"></canvas>
+    </div>
+
+	<script>
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+
+    pincel.fillStyle = "#cacaca";
+    pincel.fillRect(0, 0, 600, 400);
+
+    pincel.fillStyle = "#00ff00";
+    pincel.fillRect(0, 0, 100, 400);
+
+    pincel.fillStyle = "#ff0000";
+    pincel.fillRect(200, 0, 100, 400);
+
+    pincel.fillStyle = "#ffffff";
+    pincel.fillRect(100, 0, 100, 400);
+	</script>
+</body>
+</html>
